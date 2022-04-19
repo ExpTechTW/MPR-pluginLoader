@@ -9,7 +9,7 @@
     "name":"1.2.1",
     "note":"修正 $plugin info 重複顯示的問題",
     "Pre-Release":false,
-    "reclaimed":false
+    "reclaimed":true
   },
   {
     "name":"1.2.0",
