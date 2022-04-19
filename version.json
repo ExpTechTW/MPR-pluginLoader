@@ -1,5 +1,11 @@
 [
   {
+    "name":"1.1.0",
+    "note":"優化 $plugin 相關功能",
+    "Pre-Release":false,
+    "reclaimed":false
+  },
+  {
     "name":"1.0.0",
     "note":"第一個發布的版本",
     "Pre-Release":false,
