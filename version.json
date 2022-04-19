@@ -1,5 +1,11 @@
 [
   {
+    "name":"1.3.0",
+    "note":"新增大量新方法",
+    "Pre-Release":false,
+    "reclaimed":false
+  },
+  {
     "name":"1.2.1",
     "note":"修正 $plugin info 重複顯示的問題",
     "Pre-Release":false,
