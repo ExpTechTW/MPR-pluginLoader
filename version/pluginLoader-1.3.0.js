@@ -531,16 +531,24 @@ async function downloader(name, ver) {
         else if (ver == "dev") {
             if (Json[0]["reclaimed"] == true) return { state: false, res: "此 插件 版本 已停止支援" }
             ver = Json[0]["name"]
+        } else {
+            for (let index = 0; index < Json.length; index++) {
+                if (Json[index]["name"] == ver) {
+                    if (Json[index]["reclaimed"] == true) return { state: false, res: "此 插件 版本 已停止支援" }
+                    break
+                }
+            }
         }
+
         let res = await fetch("https://raw.githubusercontent.com/" + url + "version/" + name + "-" + ver + ".js")
         if (res.status != 200) {
             return { state: false, res: "無法取得下載檔案" }
         } else {
             let PATH = ""
             if (name == "pluginLoader") {
-                PATH = path + "/Core/" + name + ".js"
+                PATH = Path + "/Core/" + name + ".js"
             } else {
-                PATH = path + "/Plugin/" + name + ".js"
+                PATH = Path + "/Plugin/" + name + ".js"
             }
             fs.writeFileSync(PATH, await res.text(), 'utf8')
             return { state: true, res: ver }
