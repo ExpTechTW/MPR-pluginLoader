@@ -1,17 +1,27 @@
-# 模板
+# MPR-pluginLoader
 <img alt="Discord" src="https://img.shields.io/discord/926545182407688273">
 
 ------
 
-- 這是一個 ExpTech Github 模板
+- MPR 的 `pluginLoader` 插件
 
 ## 索引
+- [指令](#指令)
 - [貢獻者](#貢獻者)
 - [發佈規則](#發佈規則)
 - [合作](#合作)
 
+## 指令
+- `$help [插件]` 指令列表
+- `$init` 初始化 機器人
+- `$plugin install <插件>` 安裝 插件
+- `$plugin uninstall <插件>` 卸載 插件
+- `$plugin info [插件]` 插件 資訊
+- `$permission <用戶> <等級>` 設定用戶權限等級
+- `$permission <用戶>` 查詢用戶權限等級
+
 ## 貢獻者
-- whes1015 `文檔`
+- whes1015 `程式開發` `文檔`
 
 ------
 
