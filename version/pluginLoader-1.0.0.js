@@ -65,7 +65,7 @@ async function plugin(client, message) {
         msg = msg + "🟦 正在檢索 插件 資料夾...\n"
         let MSG = await message.reply(await embed(msg))
         let plugin = JSON.parse(fs.readFileSync(Path + "/Plugin/plugin.json").toString())
-        if (!plugin.includes(Name)) {
+        if (!plugin.includes(Name) || Name == "pluginLoader") {
             msg = msg + "🟨 未發現此 插件\n"
             edit(client, MSG.channel.id, MSG.id, await embed(msg))
             return
@@ -108,6 +108,11 @@ async function plugin(client, message) {
         } else {
             msg = msg + "🟦 下載完成 版本: " + down.res + "\n"
             edit(client, MSG.channel.id, MSG.id, await embed(msg))
+            if (Name == "pluginLoader") {
+                msg = msg + "🟩 pluginLoader 更新 完成"
+                edit(client, MSG.channel.id, MSG.id, await embed(msg))
+                return
+            }
             try {
                 msg = msg + "🟦 正在讀取文件...\n"
                 edit(client, MSG.channel.id, MSG.id, await embed(msg))
@@ -121,7 +126,7 @@ async function plugin(client, message) {
                     msg = msg + "🟦 註冊 事件監聽...\n🟦 註冊 插件訊息...\n🟦 註冊 插件指令...\n"
                     edit(client, MSG.channel.id, MSG.id, await embed(msg))
                     let plugin = JSON.parse(fs.readFileSync(Path + "/Plugin/plugin.json").toString())
-                    if (!plugin.includes(Name) && Name != "pluginLoader") {
+                    if (!plugin.includes(Name)) {
                         plugin.push(Name)
                     }
                     fs.writeFileSync(Path + "/Plugin/plugin.json", JSON.stringify(plugin, null, "\t"))
