@@ -317,7 +317,16 @@ async function plugin(client, message) {
                                 msg = msg + "🟩 已是最新版本\n"
                             } else {
                                 if (Json1[0]["Pre-Release"] == false) {
-                                    msg = msg + "🟨 發現新版本\n"
+                                    msg = msg + "🟨 發現新版本 "
+                                    for (let index = 0; index < Json1.length; index++) {
+                                        if (Json1[index]["name"] == fun.Info.version) {
+                                            if (Json1[index]["reclaimed"] == true) {
+                                                msg = msg + "🟥 此 版本 已停止支援"
+                                            }
+                                            break
+                                        }
+                                    }
+                                    msg = msg + "\n"
                                 } else {
                                     for (let index = 0; index < Json1.length; index++) {
                                         if (Json1[index]["Pre-Release"] == false) {
