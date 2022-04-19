@@ -1,5 +1,11 @@
 [
   {
+    "name":"1.1.1",
+    "note":"新增 權限 相關功能",
+    "Pre-Release":false,
+    "reclaimed":false
+  },
+  {
     "name":"1.1.0",
     "note":"優化 $plugin 相關功能",
     "Pre-Release":false,
