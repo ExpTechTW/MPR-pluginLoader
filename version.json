@@ -1,5 +1,11 @@
 [
   {
+    "name":"2.1.0",
+    "note":"優化大量程式碼",
+    "Pre-Release":false,
+    "reclaimed":false
+  },
+  {
     "name":"2.0.0",
     "note":"為 embed 添加安全限制 防止崩潰",
     "Pre-Release":false,
