@@ -1,4 +1,10 @@
 [
+   {
+    "name":"22w17-pre3",
+    "note":"修正 不兼容 錯誤",
+    "Pre-Release":true,
+    "reclaimed":false
+  },
   {
     "name":"22w17-pre2",
     "note":"修正 依賴插件 錯誤",
