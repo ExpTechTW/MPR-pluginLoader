@@ -1,7 +1,7 @@
 'use strict'
 
 const Info = {
-    "version": "1.7.0",
+    "version": "22w17-pre1",
     "pluginLoader": ["All"],
     "name": "pluginLoader",
     "author": "whes1015"
