@@ -1,5 +1,17 @@
 [
-    {
+  {
+    "name":"22w17-pre2",
+    "note":"修正 依賴插件 錯誤",
+    "Pre-Release":true,
+    "reclaimed":false
+  },
+  {
+    "name":"22w17-pre1",
+    "note":"新增 依賴插件 功能",
+    "Pre-Release":true,
+    "reclaimed":false
+  },
+   {
     "name":"1.5.0",
     "note":"修正 權限 錯誤",
     "Pre-Release":false,
