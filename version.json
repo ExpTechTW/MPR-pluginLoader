@@ -1,5 +1,11 @@
 [
-   {
+  {
+    "name":"2.0.0",
+    "note":"為 embed 添加安全限制 防止崩潰",
+    "Pre-Release":false,
+    "reclaimed":false
+  },
+  {
     "name":"22w17-pre3",
     "note":"修正 不兼容 錯誤",
     "Pre-Release":true,
