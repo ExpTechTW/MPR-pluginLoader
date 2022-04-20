@@ -1,4 +1,10 @@
 [
+    {
+    "name":"1.5.0",
+    "note":"修正 權限 錯誤",
+    "Pre-Release":false,
+    "reclaimed":false
+  },
   {
     "name":"1.4.0",
     "note":"修正 ready 調用錯誤",
