@@ -631,4 +631,4 @@ module.exports = {
     messageReactionRemove,
     messageDelete,
     messageUpdate,
-} >
+}
