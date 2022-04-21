@@ -490,7 +490,7 @@ async function plugin(client, message) {
                         let fail = 0
                         for (let index = 0; index < Object.keys(fun.Plugin.depends).length; index++) {
                             if (Object.keys(fun.Plugin.depends)[index] != "pluginLoader") {
-                                if (!fs.readdirSync(Path + "/Plugin/").includes()Object.keys(fun.Plugin.depends)[index]) {
+                                if (!fs.readdirSync(Path + "/Plugin/").includes(Object.keys(fun.Plugin.depends)[index])) {
                                     msg = msg + "🟨 未檢測到 " + Object.keys(fun.Plugin.depends)[index] + " 依賴 已終止本次安裝\n🟨 已清除 插件 緩存\n🟥 插件 安裝 失敗\n"
                                     edit(client, MSG.channel.id, MSG.id, await embed(msg))
                                     fs.unlinkSync(Path + "/Plugin/" + Name + "-Cache.js")
