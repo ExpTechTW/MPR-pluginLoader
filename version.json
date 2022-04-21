@@ -1,5 +1,11 @@
 [
   {
+    "name":"3.3.0",
+    "note":"優化 依賴 檢測方式",
+    "Pre-Release":false,
+    "reclaimed":false
+  },
+  {
     "name":"3.2.0",
     "note":"修復大量錯誤",
     "Pre-Release":false,
