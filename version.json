@@ -1,5 +1,11 @@
 [
   {
+    "name":"3.4.0",
+    "note":"修正 $plugin update",
+    "Pre-Release":false,
+    "reclaimed":false
+  },
+  {
     "name":"3.3.0",
     "note":"優化 依賴 檢測方式",
     "Pre-Release":false,
