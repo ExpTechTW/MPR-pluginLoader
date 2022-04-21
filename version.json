@@ -1,5 +1,11 @@
 [
   {
+    "name":"3.6.0",
+    "note":"修正檢測不到 依賴 的問題",
+    "Pre-Release":false,
+    "reclaimed":false
+  },
+  {
     "name":"3.5.0",
     "note":"自訂義 Prefix 功能",
     "Pre-Release":false,
