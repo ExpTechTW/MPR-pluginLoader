@@ -1,5 +1,11 @@
 [
   {
+    "name":"3.0.0",
+    "note":"優化 依賴 聲明方式",
+    "Pre-Release":false,
+    "reclaimed":false
+  },
+  {
     "name":"2.6.0",
     "note":"優化 $help 顯示",
     "Pre-Release":false,
