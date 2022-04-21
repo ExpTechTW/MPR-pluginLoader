@@ -1,5 +1,11 @@
 [
   {
+    "name":"3.5.0",
+    "note":"自訂義 Prefix 功能",
+    "Pre-Release":false,
+    "reclaimed":false
+  },
+  {
     "name":"3.4.0",
     "note":"修正 $plugin update",
     "Pre-Release":false,
