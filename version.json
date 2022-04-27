@@ -1,5 +1,11 @@
 [
   {
+    "name":"4.8.1",
+    "note":"修正 reload 事件",
+    "Pre-Release":false,
+    "reclaimed":false
+  },
+  {
     "name":"4.8.0",
     "note":"修正 onLoad 事件",
     "Pre-Release":false,
