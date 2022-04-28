@@ -1,5 +1,11 @@
 [
   {
+    "name":"4.9.0",
+    "note":"新增 日誌記錄",
+    "Pre-Release":false,
+    "reclaimed":false
+  },
+  {
     "name":"4.8.5",
     "note":"新增 日誌 顯示",
     "Pre-Release":false,
